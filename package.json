@@ -1,0 +1,22 @@
+{
+  "name": "easy-fridge",
+  "version": "1.0.0",
+  "description": "Web based app for visualizing the contents of a fridge",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BryceTChung/easy-fridge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BryceTChung/easy-fridge/issues"
+  },
+  "homepage": "https://github.com/BryceTChung/easy-fridge#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
