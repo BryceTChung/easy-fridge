@@ -1,0 +1,77 @@
+* {
+  color: black;
+}
+
+.class{
+  color:blue;
+}
+
+#id{
+  color:pink;
+}
+#main{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100vh;
+}
+#col1{
+  display: flex;
+  /* margin: 20px; */
+  padding: 10px;
+  border-style: solid;
+  flex-basis: 20%;
+  height: 100%;
+  align-content: flex-start;
+}
+#col2{
+  display: flex;
+  border-style: solid;
+  flex-basis: 60%;
+  /* margin: 20px; */
+  height: 100%;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#col3{
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  width: 20%;
+  /* margin: 20px; */
+  padding: 10px;
+  height: 100%;
+  align-content: flex-start;
+}
+#expirationDateBox{
+  margin-top:10px;
+}
+#fileBoxLabel{
+  margin-top: 10px;
+  border-style: solid;
+  border-width: thin;
+  padding: 2px;
+  color: grey;
+  border-color: black;
+}
+#fileBox{
+  display: none;
+}
+#submitButton{
+  margin-top: 10px;
+}
+.foodIcon{
+  display: flex;
+  flex-direction: column;
+  max-width: 80px;
+  /* max-height: 80px; */
+  margin: 10px;
+  align-items: center;
+}
+.foodIconElements{
+  display:flex;
+  max-height:80px;
+  font-size: medium;
+}

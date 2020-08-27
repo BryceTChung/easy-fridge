@@ -3,11 +3,24 @@ const path = require('path');
 const fs = require('fs');
 const http = require('http');
 
-const server = http.createServer((req, res) => {
-    if (req.url === '/') {
-        res.end('<h1>hi</h1>');
-    }
+const express = require('express');
+
+const app = express();
+const PORT = process.env.PORT || 5000;
+
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.json());
+
+app.listen(PORT, function () {
+    console.log("server started on port " + PORT)
 });
-server.listen(5000, function () {
-    console.log("server started");
+
+app.get('/', function (req, res) {
+    res.sendFile(path.join(__dirname, 'index.html'));
+});
+
+app.post('/test', (req, res) => {
+    console.log("in");
+    console.log(req.body)
+    res.send(req.body);
 });
